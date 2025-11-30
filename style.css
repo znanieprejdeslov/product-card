@@ -25,13 +25,11 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 45px;
-
 }
 
 .container {
   width: 1280px;
   margin: 0 auto;
-
 }
 
 .bg-flowers {
@@ -44,7 +42,6 @@
   z-index: -1;
   background-position: 85px 0px;
   position: absolute;
-
 }
 
 .card-container {
@@ -56,7 +53,6 @@
   margin-left: 45px;
   margin-bottom: 45px;
   position: relative;
-
 }
 
 .product-category {
@@ -78,7 +74,6 @@
 
 .product-description {
   margin-bottom: 15px;
-
 }
 
 .product-compound {
