@@ -9,7 +9,7 @@
   font-weight: 400;
 }
 
-.title{
+.title {
   font-size: 70px;
   line-height: 78px;
   display: flex;
@@ -19,7 +19,7 @@
   position: relative;
 }
 
-.product-catalog{
+.product-catalog {
   display: flex;
   list-style: none;
   justify-content: center;
@@ -34,7 +34,7 @@
 
 }
 
-.bg-flowers{
+.bg-flowers {
   background-image: url('images/bgflowers.png');
   background-repeat: no-repeat;
   background-size: 790px 697px;
