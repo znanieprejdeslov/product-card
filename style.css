@@ -55,6 +55,14 @@
   position: relative;
 }
 
+.change-color-blue {
+  background-color: #0004df;
+}
+
+.change-color-purple{
+  background-color: #600cfd;
+}
+
 .product-category {
   font-size: 12px;
   line-height: 24px;
