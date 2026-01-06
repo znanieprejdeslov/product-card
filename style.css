@@ -55,11 +55,11 @@
   position: relative;
 }
 
-.change-color-blue {
+.bg-blue {
   background-color: #0004df;
 }
 
-.change-color-purple{
+.bg-purple {
   background-color: #600cfd;
 }
 

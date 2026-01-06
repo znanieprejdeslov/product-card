@@ -5,8 +5,8 @@ const changeColorAllCardButton = document.querySelector('#change-color-all-card'
 const greenColorHash = '#00FF00'
 const blueColorHash = '#0000FF'
 
- changeColorAllCardButton.addEventListener('click',() => {
-  productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
+  changeColorAllCardButton.addEventListener('click',() => {
+    productCards.forEach((card) => card.style.backgroundColor = greenColorHash)
  })
 
 
@@ -15,15 +15,15 @@ const blueColorHash = '#0000FF'
 const firstproductCard = document.querySelector('.card-container');
 const changeColorFirstCardButton = document.querySelector('#change-color-first-card');
 
-changeColorFirstCardButton.addEventListener('click',() => {
-  firstproductCard.style.backgroundColor = blueColorHash;
+  changeColorFirstCardButton.addEventListener('click',() => {
+    firstproductCard.style.backgroundColor = blueColorHash;
  })
 
  // открыть google
 
 const openGoogleButton = document.querySelector('#open-google')
 
-openGoogleButton.addEventListener('click', openGoogle)
+  openGoogleButton.addEventListener('click', openGoogle)
 
 function openGoogle() {
   const answer = confirm('Вы действительно хотите открыть Google?')
@@ -39,15 +39,15 @@ function openGoogle() {
 
 const outputLogButton = document.querySelector('#output-console-log');
 
-outputLogButton.addEventListener('click', () => outputConsoleLog('Д3 №4'))
+  outputLogButton.addEventListener('click', () => outputConsoleLog('Д3 №4'))
 
 function outputConsoleLog(message) {
   console.log(message)
 }
 
-const consoleTitle = document.querySelector('.title')
+const title = document.querySelector('.title')
 
-consoleTitle.addEventListener('mouseover', () => {
+  title.addEventListener('mouseover', () => {
   console.log(consoleTitle.textContent)
 })
 
@@ -55,7 +55,7 @@ consoleTitle.addEventListener('mouseover', () => {
 
 const changeColor = document.getElementById("change-color");
 
-changeColor.addEventListener('click', e => {
-changeColor.classList.toggle("change-color-purple")
+  changeColor.addEventListener('click', e => {
+  changeColor.classList.toggle("bg-purple")
 })
 
