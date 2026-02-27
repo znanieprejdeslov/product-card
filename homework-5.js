@@ -35,6 +35,6 @@ function showSkills () {
 
 }
 
-const computerName = ("Компьютер 1")
-let heroName = ("Primal Beast")
-const skillsLevel = ("Level 5")
+const computerName = ("Компьютер 1");
+let heroName = ("Primal Beast");
+const skillsLevel = ("Level 5");  
