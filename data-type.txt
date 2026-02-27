@@ -1,0 +1,8 @@
+number (NaN) число
+string (строка)
+boolean (true/false) (логический тип)
+Undefined (не знаем)
+Null (Пусто)
+Symbol (уникал. индефикатор)
+Bigint (очень боольшое число)
+object ([] (array))
