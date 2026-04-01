@@ -6,27 +6,29 @@ function showTemperature(city, temperature ) {
 showTemperature('Алматы', '25');
 
 const LIGHT_SPEED = 299792458;
-  function currentSpeed (speed) {
-    if (speed > lightSpeed) {
-      console.log("сверхсветовая скорость") 
-    } else if (speed < lightSpeed) { 
-      console.log("Субсветовая скорость") 
-    } else { 
-      console.log("скорость света") 
-    }
- }
 
-  coompareSpeed(300000000);
+function compareSpeed(speed) {
+  if (speed > LIGHT_SPEED) {
+    console.log("сверхсветовая скорость"); 
+  } else if (speed < LIGHT_SPEED) { 
+    console.log("Субсветовая скорость");
+  } else { 
+    console.log("скорость света"); 
+  }
+}
+
+compareSpeed(300000000);
 
 const productName = Самокат
 const productPrice = 500
 
-  function buyProduct (budget) {
-    if (budget >= productPrice)
-      console.log('Самокат приобретен.Спасибо за покупку')
-    else 
-      console.log(`Вам не хватает ${productPrice-budget}`)   
+function buyProduct(budget) {
+  if (budget >= productPrice) {
+    console.log('Самокат приобретен.Спасибо за покупку');
+  } else {
+    console.log(`Вам не хватает ${productPrice-budget}`);  
   }
+}
 
 buyProduct(200);
 
