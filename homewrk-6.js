@@ -19,7 +19,7 @@ const car = {
 
 carOwner = user;
 
-//5.Написать функцию которая аргументом будет принимать объект,
+//5.Написать функцию которая аргументом будет принимать объект,ёё
 function checkMaxSpeed (car){
   if ('maxSpeed' in car){
     return
