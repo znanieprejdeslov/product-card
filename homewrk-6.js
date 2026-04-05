@@ -17,61 +17,87 @@ const car = {
   transmission: 'automatic'
 }
 
-carOwner = user;
+car.owner = user;
+
+console.log(car)
 
 //5.Написать функцию которая аргументом будет принимать объект,ёё
 function checkMaxSpeed (car){
   if ('maxSpeed' in car){
-    return
+    return;
   } else {
     car.maxSpeed = 225;
   }
 }
 
 //6. Написать функцию, которая получает первым аргументом  — объект, а вторым аргументом — свойство объекта, которое нужно вывести и выводит его значение.
-const carBrand = (car,Toyota) => {
-  console.log(car,[Toyota]);
+const getPropertyValue = (obj,key) => {
+  console.log(obj[key]);
 }
+
+getPropertyValue(car,'brand');
 
 //7. Создать массив, который содержит названия продуктов (просто строки)
 const vegetables = ['Тыква', 'огурец', 'помидор', 'картошка', 'баклажан']
 
 //8. Создать массив, состоящий из объектов, где объект представляет собой книгу (название, автор, год выпуска, цвет обложки, жанр) (3-5 книг).
 const infoBook = [{
-  'name': 'Белый Клык','auhtor': 'Джек Лондон','year': '1906','color': 'Зеленая',
+  'name': 'Белый Клык',
+  'author': 'Джек Лондон',
+  'year': '1906',
+  'color': 'Зеленая'},
 
-  'name': 'Зов Предков','auhtor': 'Джек Лондон','year': '1903','color': 'красная',
+  {'name': 'Зов Предков',
+  'author': 'Джек Лондон',
+  'year': '1903',
+  'color': 'красная'},
 
-  'name': 'Бегущий за Ветром','auhtor': 'Халед Хоссейни','year': '2003','color': 'синяя',
+  {'name': 'Бегущий за Ветром',
+  'author': 'Халед Хоссейни',
+  'year': '2003',
+  'color': 'синяя'},
   
-  'name': 'Тысяча сияющий солнц','auhtor': 'Халед Хоссейни','year': '2007','color': 'желтая'
+  {'name': 'Тысяча сияющий солнц',
+  'author': 'Халед Хоссейни',
+  'year': '2007',
+  'color': 'желтая'
+}];
+
+infoBook.push({'name': 'Оно','author': 'Стивен Кинг','year': '1986','color': 'черная',})
+
+const garryPotterMultiverse = [{
+  'name': 'Гарри Поттер и Философский камень',
+  'author': 'Дж. К. Роулинг',
+  'year': '1997',
+  'color': 'Зеленая'},
+
+  {'name': 'Гарри Поттер и Тайная Комната',
+  'author': 'Дж. К. Роулинг',
+  'year': '1998',
+  'color': 'красная'},
+
+  {'name': 'Гарри Поттер и узник Азкабана',
+  'author': 'Дж. К. Роулинг',
+  'year': '1999',
+  'color': 'синяя'},
+  
+  {'name': 'Гарри Поттер и Кубок Огня',
+  'author': 'Дж. К. Роулинг',
+  'year': '2000',
+  'color': 'желтая'
 }]
 
-infoBook.push({'name': 'Оно','auhtor': 'Стивен Кинг','year': '1986','color': 'черная',})
 
-const GarryPotterMultiverse = [{
-  'name': 'Гарри Поттер и Философский камень','auhtor': 'Дж. К. Роулинг','year': '1997','color': 'Зеленая',
-
-  'name': 'Гарри Поттер и Тайная Комната','auhtor': 'Дж. К. Роулинг','year': '1998','color': 'красная',
-
-  'name': 'Гарри Поттер и узник Азкабана','auhtor': 'Дж. К. Роулинг','year': '1999','color': 'синяя',
-  
-  'name': 'Гарри Поттер и Кубок Огня','auhtor': 'Дж. К. Роулинг','year': '2000','color': 'желтая'
-}]
-
-
-const books = { ...infoBook, ...GarryPotterMultiverse}
+const books = [ ...infoBook, ...garryPotterMultiverse];
 
 //10. Почитать про метод массива — map. Написать функцию, которая принимает массив сущностей с задания №9. 
-const isRareBook = (rareBook) => {
-  return rareBook.map((books)=> {
-    if (books.year>1997) {
-      books.isRare = true
-    } else {
-      books.isRare = false
-    }
-    return books
-  })
+const isRareBook = (rareBooks) => {
+  return rareBooks.map(book => {
+         book.isRare = book.year>1997 
+       ? true : false;
+       return book
+        }
+       )
 }
 
-isRareBook(books)
+console.log(isRareBook(books));
