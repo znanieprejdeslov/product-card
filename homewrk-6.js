@@ -29,11 +29,11 @@ function checkMaxSpeed (car) {
 }
 
 //6. Написать функцию, которая получает первым аргументом  — объект, а вторым аргументом — свойство объекта, которое нужно вывести и выводит его значение.
-const getObjectValue = (obj, key) => {
+const showObjectValue = (obj, key) => {
   console.log(obj[key]);
 }
 
-getObjectValue(car,'brand');
+showObjectValue(car,'brand');
 
 //7. Создать массив, который содержит названия продуктов (просто строки)
 const vegetables = ['Тыква', 'огурец', 'помидор', 'картошка', 'баклажан'];
