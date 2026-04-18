@@ -24,20 +24,20 @@ console.log(heroes)
 //4. Написать функцию, которая аргументом будет принимать массив и изменять его порядок на противоположный ("переворачивать") . Два вышеуказанных массива с помощью этой функции перевернуть.
 
 //(2)Массив
-numbers.reverse()
+const allNumbers = numbers.reverse()
 
-console.log(numbers)
+console.log(allNumbers)
 
 //(3)Массив
-heroes.reverse()
+const allHeroes = heroes.reverse()
 
-console.log(heroes)
+console.log(allHeroes)
 
 //7. Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
-const showComments = userComments.filter(comment => comment.email.includes('.com'))
+const filteredNumbers = userComments.filter(comment => comment.email.includes('.com'))
 
-console.log(showComments)
+console.log(filteredNumbers)
 
 ///8. Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
 
@@ -50,12 +50,12 @@ console.log(updatedComments);
 
 //9. Перебрать массив, что бы объекты состояли только из айди и имени
 
-const showIdName = userComments.map(users => ({ 
+const userName = userComments.map(users => ({ 
   id: users.id, 
   name: users.name
 }));
 
-console.log(showIdName);
+console.log(userName);
 
 //10. Перебираем массив, добавляем объектам свойство isInvalid и проверяем: если длина тела сообщения (body) больше 180 символов - устанавливаем true, меньше - false.
 
@@ -72,13 +72,13 @@ console.log(validateComments);
 //12. Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
 
 
-const outputMails = userComments.reduce(( box,comment ) => {
+const mailsByReduce = userComments.reduce(( box,comment ) => {
   box.push(comment.email)
   return box;
 }, []).toString();
 
-console.log(outputMails);
+console.log(mailsByReduce);
 
-const outputEmails = userComments.map(comment => comment.email);
+const allMails = userComments.map(comment => comment.email);
 
-console.log(outputEmails);
+console.log(allMails);
