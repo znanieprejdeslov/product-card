@@ -33,15 +33,15 @@ console.log(reverseArray(heroes))
 
 //7. Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
-const commentArrays = comments.filter(comment => comment.email.includes('.com'))
+const commentEmailsWithCom = comments.filter(comment => comment.email.includes('.com'))
 
-console.log(commentArrays)
+console.log(commentEmailsWithCom)
 
 ///8. Перебрать массив таким образом, что бы пользователи с id меньше или равно 5 имели postId: 2, а те, у кого id больше 5, имели postId: 1
 
-const updatedComments = comments.map(users => ({
-  ...users,
-  user: users.id <= 5 ? 'postId: 2' : 'postId: 1'
+const updatedComments = comments.map(comment => ({
+  ...comment,
+  postId: comment.id <= 5 ? 2 : 1
 }));
 
 console.log(updatedComments);
